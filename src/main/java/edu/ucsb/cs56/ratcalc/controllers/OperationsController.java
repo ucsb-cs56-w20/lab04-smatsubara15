@@ -112,7 +112,7 @@ public class OperationsController {
         return "operations/multiply";
     }    
 
- @GetMapping("/multiply/results")
+    @GetMapping("/multiply/results")
     public String getMultiplyResult(Model model, @Valid RatCalcForm ratCalcForm, BindingResult bindingResult) {
 
         logger.info("getMultiplyResult ratCalcForm=" + ratCalcForm);
@@ -131,4 +131,11 @@ public class OperationsController {
         return "operations/multiply";
     }
 
+    @GetMapping("/divide")
+    public String getDivide(Model model) {
+        RatCalcForm ratCalcForm = new RatCalcForm();
+        ratCalcForm.setOp("/");
+        model.addAttribute("ratCalcForm", ratCalcForm);
+        return "operations/divide";
+    }    
 }
