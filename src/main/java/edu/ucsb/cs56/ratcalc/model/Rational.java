@@ -200,15 +200,14 @@ public class Rational {
 
 	}
 
-
-
-       // this.num=num;
-
-       // this.denom=denom;
-
+	if(num==0){
+		this.num=0;
+		this.denom=0;
+	}
     
-
-	if (num != 0) {
+	else {
+		this.num=num;
+    	this.denom=denom;
 
 	    int gcd = Rational.gcd(num,denom);
 
