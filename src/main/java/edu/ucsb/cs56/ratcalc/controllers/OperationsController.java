@@ -138,10 +138,9 @@ public class OperationsController {
         model.addAttribute("ratCalcForm", ratCalcForm);
         return "operations/divide";
     }    
-}
+    
 
-
-@GetMapping("/divide/results")
+    @GetMapping("/divide/results")
     public String getDivideResult(Model model, @Valid RatCalcForm ratCalcForm, BindingResult bindingResult) {
 
         logger.info("getDivideResult ratCalcForm=" + ratCalcForm);
@@ -159,3 +158,4 @@ public class OperationsController {
         model.addAttribute("ratCalcForm", ratCalcForm);
         return "operations/divide";
     }
+}
