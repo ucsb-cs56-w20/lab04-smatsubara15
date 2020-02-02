@@ -164,8 +164,6 @@ public class Rational {
 
     public static Rational quotient(Rational a, Rational b){
 
-    
-
 	    b = b.reciprocalOf();
 
 	    return product(a,b);
@@ -200,14 +198,15 @@ public class Rational {
 
 	}
 
-	if(num==0){
-		this.num=0;
-		this.denom=0;
-	}
+
+
+        this.num=num;
+
+        this.denom=denom;
+
     
-	else {
-		this.num=num;
-    	this.denom=denom;
+
+	if (num != 0) {
 
 	    int gcd = Rational.gcd(num,denom);
 
