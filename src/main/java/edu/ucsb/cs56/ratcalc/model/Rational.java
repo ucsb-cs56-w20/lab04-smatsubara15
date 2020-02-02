@@ -168,7 +168,6 @@ public class Rational {
 
 	    b = b.reciprocalOf();
 
-
 	    return product(a,b);
 
     }
@@ -203,9 +202,9 @@ public class Rational {
 
 
 
-        this.num=num;
+       // this.num=num;
 
-        this.denom=denom;
+       // this.denom=denom;
 
     
 
