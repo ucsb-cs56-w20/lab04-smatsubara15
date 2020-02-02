@@ -87,7 +87,7 @@ public class OperationsController {
 
     @GetMapping("/subtract/results")
     public String getSubtractResult(Model model, @Valid RatCalcForm ratCalcForm, BindingResult bindingResult) {
-        #
+
         logger.info("getSubtractResult ratCalcForm=" + ratCalcForm);
         ratCalcForm.setOp("-");
 
